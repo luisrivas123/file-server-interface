@@ -28,10 +28,14 @@ const getAllFilesSended = () => {
 </script>
 
 <template>
-  <div class="container text-center mt-3">
-    <h1>File Server Information</h1>
-    <button @click="getAllConnections">Info Channel conecctions</button>
-    <div >
+  <nav class="navbar navbar-dark bg-dark">
+    <a href="/" class="navbar-brand">File Server Information</a>
+  </nav>
+
+  <div class="col-md-6 text-center offset-md-3">
+    <!-- <h1>File Server Information</h1> -->
+    <button @click="getAllConnections" class="btn btn-dark btn-block mt-3">Info Channel conecctions</button>
+    <div class="card">
       <ul class="list-group">
         <li
           class="list-group-item"
@@ -42,8 +46,8 @@ const getAllFilesSended = () => {
         </li>
       </ul>
     </div>
-    <button @click="getAllFilesSended" class="mt-4">Info files sended</button>
-    <div >
+    <button @click="getAllFilesSended" class="btn btn-dark btn-block mt-4">Info files sended</button>
+    <div class="card">
       <ul class="list-group">
         <li
           class="list-group-item"
@@ -58,5 +62,7 @@ const getAllFilesSended = () => {
 </template>
 
 <style>
-
+  body {
+    background-color: #333;
+  }
 </style>
